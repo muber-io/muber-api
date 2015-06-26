@@ -8,7 +8,11 @@ gem 'sinatra-contrib', require: false
 gem 'rake'
 
 gem 'puma'
+
 gem 'mongoid'
+gem 'mongoid-enum'
+
+gem 'mutations'
 
 group :development do
   gem 'pry'

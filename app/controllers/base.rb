@@ -1,11 +1,9 @@
-module Muber
-  module API
-    class V1
+module Muber::API
+  class V1
 
-      # GET /ping
-      get '/ping' do
-        return 'pong'
-      end
+    # GET /ping
+    get '/ping' do
+      return 'pong'
     end
   end
 end

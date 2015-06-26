@@ -8,7 +8,7 @@ Dir.glob(ROOT + '/spec/factories/*.rb').each { |f| require f }
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
-  config.include Mongoid::Matchers, type: :model
+  config.include Mongoid::Matchers
   config.include FactoryGirl::Syntax::Methods
 
   config.before :suite do
