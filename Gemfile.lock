@@ -15,6 +15,10 @@ GEM
     builder (3.2.2)
     coderay (1.1.0)
     connection_pool (2.2.0)
+    database_cleaner (1.4.1)
+    diff-lcs (1.2.5)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
     foreman (0.78.0)
       thor (~> 0.19.1)
     i18n (0.7.0)
@@ -26,6 +30,10 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
+    mongoid-rspec (2.2.0)
+      mongoid (~> 4.0.0)
+      rake
+      rspec (~> 3.1)
     moped (2.0.6)
       bson (~> 3.0)
       connection_pool (~> 2.0)
@@ -45,6 +53,19 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
+    rspec-core (3.3.0)
+      rspec-support (~> 3.3.0)
+    rspec-expectations (3.3.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-mocks (3.3.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-support (3.3.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -67,11 +88,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  database_cleaner
+  factory_girl
   foreman
   mongoid
+  mongoid-rspec
   pry
   puma
   rake
+  rspec
   sinatra
   sinatra-contrib
 

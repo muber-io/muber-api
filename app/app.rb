@@ -11,5 +11,5 @@ module Muber
 end
 
 %W(models helpers controllers).each do |dir|
-  Dir[ROOT + "/app/#{dir}/*.rb"].each { |f| require f }
+  Dir.glob(ROOT + "/app/#{dir}/*.rb").each { |f| require f }
 end

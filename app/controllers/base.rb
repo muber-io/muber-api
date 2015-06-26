@@ -2,9 +2,9 @@ module Muber
   module API
     class V1
 
-      # GET /
-      get '/' do
-        return User.first.email
+      # GET /ping
+      get '/ping' do
+        return 'pong'
       end
     end
   end

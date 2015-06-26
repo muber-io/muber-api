@@ -21,3 +21,9 @@ Run the console:
 ```
 $ bundle exec rake console
 ```
+
+Run the specs:
+
+```
+$ bundle exec rspec
+```
