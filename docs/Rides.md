@@ -20,6 +20,7 @@ No parameters required.
       "requested_for": 2012-04-23T18:25:43.511Z,
       "pickup_at": 2012-04-23T18:25:43.511Z,
       "dropoff_at": 2012-04-23T18:25:43.511Z,
+	  "total_passengers" : 1 
       "pickup_location": {
         "id": 1,
         "name": "Donnelly Hall",
